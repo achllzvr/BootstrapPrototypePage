@@ -45,6 +45,10 @@
     box-shadow: inset 0 0 10px #00000017;
 }
 
+.os{
+    box-shadow: 0 0 15px #0000002c;
+}
+
 .os-r{
     box-shadow: 0 0 35px #b900004f;
 }
