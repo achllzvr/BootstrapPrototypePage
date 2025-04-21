@@ -1,0 +1,76 @@
+@media (max-width: 767px) {
+    .top-container{
+        display: flex;
+        flex-direction: column;
+        height: 83%;
+    }
+
+    .data-container{
+        padding: 2rem;
+    }
+
+    .contact{
+        width: 100%;
+        height: 30%;
+        padding: 2rem;
+    }
+
+    #about-image{
+        width: 70%;
+        height: auto;
+        border-radius: 7px;
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .top-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 85%;
+    }
+
+    .data-container{
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+        scrollbar-width: none;
+        padding: 2rem;
+    }
+
+    #about-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact{
+        position: relative;
+        height: 15%;
+    }
+}
+
+.about-icons{
+    width: 2rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+}
+
+    .contact-container svg{
+        width: 4rem;
+        height: auto;
+    }
