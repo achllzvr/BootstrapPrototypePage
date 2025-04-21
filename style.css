@@ -53,6 +53,24 @@
     box-shadow: 0 0 35px #b900004f;
 }
 
+/* Gradient Overlay */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 80%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)50%, rgb(255, 255, 255) 95%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Ensure the content is above the gradient */
+.gdnt-cnt, .col-6 {
+    position: relative;
+    z-index: 1;
+}
+
 .about-container{
     display: flex;
     flex-direction: row;
