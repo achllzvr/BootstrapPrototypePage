@@ -148,8 +148,31 @@
     pointer-events: none;
 }
 
-.about-icons-c{
-    width: 50px;
+.about-icons{
+    width: 60px;
     height: auto;
+    margin-bottom: 5px;
+}
+
+.certification-card{
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+
+.c-card-text{
+    font-size: 15px;
+    text-align: center;
+}
+
+.close-btn{
+    border-radius: 50px;
+    min-width: 100px;
+    min-height: 100px;
+    justify-self: center;
+    align-self: center;
 }
 
