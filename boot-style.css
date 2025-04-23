@@ -82,29 +82,31 @@
 }
 
 #about-me-card{
-    z-index: 2;
-}
-
-#click-text{
+    position: relative;
     z-index: 1;
 }
 
-#about-me-card:not(:hover){
+#click-text{
+    position: absolute;
+    z-index: 2;
+}
+
+#about-me:not(:hover) #about-me-card{
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
 
-#about-me-card:hover{
+#about-me:not(:hover) #click-text{
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-#about-me:not(:hover) > #click-text{
+#about-me:hover #about-me-card{
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-#about-me:hover > #click-text{
+#about-me:hover #click-text{
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
