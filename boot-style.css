@@ -5,11 +5,19 @@
     scrollbar-width: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
     .top-container{
         display: flex;
         flex-direction: column;
         height: 83%;
+    }
+
+    .skills-width{
+        width: 100%;
+    }
+
+    .tech-width{
+        width: 100%;
     }
 
     .about-container{
@@ -46,12 +54,20 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 951px) {
     .top-container{
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 85%;
+    }
+
+    .skills-width{
+        width: 50%;
+    }
+
+    .tech-width{
+        width: 75%;
     }
 
     .about-container{
@@ -72,7 +88,8 @@
 
     #about-image{
         width: 100%;
-        height: auto;
+        height: 85%;
+        object-fit: cover;
     }
 
     .contact{
@@ -206,7 +223,7 @@
 }
 
 .data:hover{
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     border: 2px solid rgba(0, 115, 255, 0.497);
     transition: transform 0.2s ease-in-out,
@@ -237,4 +254,22 @@
     filter: blur();
     opacity: 1;
     pointer-events: auto;
+}
+
+#certi-link:hover p{
+    transform: translateX(-7px);
+    transition: transform 0.4s ease-in-out;
+}
+
+#certi-link:hover .about-icons{
+    transform: translateX(7px);
+    transition: transform 0.4s ease-in-out;
+}
+
+#certi-link .about-icons{
+    transition: transform 0.2s ease-in-out;
+}
+
+#certi-link p{
+    transition: transform 0.2s ease-in-out;
 }

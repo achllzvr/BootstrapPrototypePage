@@ -26,16 +26,16 @@
                   </button>
     
                 <!-- Soft Skills List -->
-                <div class="card card-body m-3 flex-fill w-100 h-auto os">
-                    <h5>Basic Information</h5>
+                <div class="card card-body m-3 d-flex flex-column px-5 flex-fill skills-width h-auto os">
+                    <h5 class="fw-bold">Basic Information</h5>
                     <ul style="list-style: none; margin-left: -25px;">
-                        <li><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/marker.png" alt="marker"/>&nbsp;&nbsp;Lipa, Batangas, Philippines</li>
-                        <li><img width="24" height="24" src="https://img.icons8.com/sf-black-filled/64/age.png" alt="age"/>&nbsp;&nbsp;19 years old</li>
-                        <li><img width="24" height="24" src="https://img.icons8.com/fluency-systems-filled/48/developer.png" alt="softare-engineer"/>&nbsp;&nbsp;Software Engineer</li>
-                        <li><img width="24" height="24" src="https://img.icons8.com/?size=100&id=12486&format=png&color=000000" alt="webdev"/>&nbsp;&nbsp;Full-Stack Web Developer</li>
-                        <li><img width="24" height="24" src="https://img.icons8.com/ios-filled/50/developer-mode.png" alt="developer-mode"/>&nbsp;&nbsp;Full-Stack Mobile App Developer</li>
+                        <li><img width="24" height="24" style="padding-bottom: 5px;" src="https://img.icons8.com/material-rounded/24/marker.png" alt="marker"/>&nbsp;&nbsp;Lipa, Batangas, Philippines</li>
+                        <li><img width="24" height="24" style="padding-bottom: 5px;" src="https://img.icons8.com/sf-black-filled/64/age.png" alt="age"/>&nbsp;&nbsp;19 years old</li>
+                        <li><img width="24" height="24" style="padding-bottom: 5px;" src="https://img.icons8.com/fluency-systems-filled/48/developer.png" alt="softare-engineer"/>&nbsp;&nbsp;Software Engineer</li>
+                        <li><img width="24" height="24" style="padding-bottom: 5px;" src="https://img.icons8.com/?size=100&id=12486&format=png&color=000000" alt="webdev"/>&nbsp;&nbsp;Full-Stack Web Developer</li>
+                        <li><img width="24" height="24" style="padding-bottom: 5px;" src="https://img.icons8.com/ios-filled/50/developer-mode.png" alt="developer-mode"/>&nbsp;&nbsp;Full-Stack Mobile App Developer</li>
                     </ul>
-                    <h5>Soft Skills</h5>
+                    <h5 class="fw-bold">Soft Skills</h5>
                     <ul>
                         <li>Leadership</li>
                         <li>Problem-Solving</li>
@@ -47,10 +47,10 @@
                 </div>
 
                 <!-- Technnical Skills List -->
-                <div class="card card-body m-3 flex-fill w-100 h-auto os">
-                    <h5>Technical Skills</h5>
+                <div class="card card-body m-3 flex-fill tech-width h-auto os">
+                    <h5 class="fw-bold">Technical Skills</h5>
 
-                        <div class="about-container d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="about-container d-flex flex-row justify-content-between align-items-center flex-wrap px-5">
 
                             <!-- HTML -->
                             <div class="certification-card text-center">
@@ -123,25 +123,31 @@
 
                 <!-- Certifications -->
                 <div class="card card-body m-3 flex-fill w-100 h-auto os">
-                    <h5>Certifications</h5>
-                    
-                    <div class="about-container d-flex justify-content-center align-items-center flex-wrap">
+                    <h5 class="fw-bold">Certifications</h5>
+                        
+                    <div class="h-100 d-flex flex-column justify-content-evenly">
 
-                        <div class="certification-card">
-                            <img src="certification-icons/Java.png" class="about-icons" alt="Java">
-                              <p class="badge text-bg-primary text-wrap">IT Specialist - Java</p>
-                        </div>
-    
-                        <div class="certification-card">
-                            <img src="certification-icons/IC3.png" class="about-icons" alt="IC3">
-                              <p class="badge text-bg-primary text-wrap">IC3 GS6 - Level 1</p>
-                        </div>
-    
-                        <div class="certification-card">
-                            <img src="certification-icons/github-foundations.png" class="about-icons" alt="GitHub Foundations">
-                            <p class="badge text-bg-primary text-wrap">GitHub Foundations Certification</p>
-                        </div>
+                        <a class="text-decoration-none px-5" id="certi-link" href="https://www.credly.com/badges/d3041bd5-d4ca-424c-93df-6ff6ee8f8895" target="_blank">
+                            <div class="certification-card d-flex flex-row justify-content-between">
+                                <img src="certification-icons/Java.png" class="about-icons" alt="Java">
+                                <p class="fs-5 fw-medium text-black text-decoration-none">IT Specialist - Java  <img width="20" height="20" style="margin-bottom: 5px;" src="https://img.icons8.com/?size=100&id=o90MnZhnB2CM&format=png&color=000000" alt="external-link"/></p>
+                            </div>
+                        </a>
 
+                        <a class="text-decoration-none px-5" id="certi-link" href="https://www.credly.com/badges/0f1b2c3d-4e5f-6789-0abc-def123456789" target="_blank">
+                            <div class="certification-card d-flex flex-row justify-content-between">
+                                <img src="certification-icons/IC3.png" class="about-icons" alt="IC3">
+                                  <p class="fs-5 fw-medium text-black text-decoration-none">IC3 GS6 - Level 1  <img width="20" height="20" style="margin-bottom: 5px;" src="https://img.icons8.com/?size=100&id=o90MnZhnB2CM&format=png&color=000000" alt="external-link"/></p>
+                            </div>
+                        </a>
+    
+                        <a class="text-decoration-none px-5" id="certi-link" href="#" target="_blank">
+                            <div class="certification-card d-flex flex-row justify-content-between">
+                                <img src="certification-icons/github-foundations.png" class="about-icons" alt="GitHub Foundations">
+                                <p class="fs-5 fw-medium text-black text-decoration-none">GitHub Foundations  <img width="20" height="20" style="margin-bottom: 5px;" src="https://img.icons8.com/?size=100&id=o90MnZhnB2CM&format=png&color=000000" alt="external-link"/></p>
+                            </div>
+                        </a>
+                        
                     </div>
 
                 </div>
@@ -159,10 +165,10 @@
         <!-- Me -->
         <div id="about-me" class="p-3 flex-fill w-100 h-auto">
 
-            <div id="about-me-card" class="about-data card w-100 h-100 os" style="width: 18rem;">
+            <div id="about-me-card" class="about-data card w-100 h-100 os" style="width: 18rem;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <img id="about-image" src="images/me.jpeg" class="card-img-top" alt="icon">
                 <div class="card-body p-3">
-                  <h5 class="card-title fw-bold fs-3"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Achilles Vonn D. Rabina<a class="about-arrow"> &rarr;</a></h5>
+                  <h5 class="card-title fw-bold fs-3">Achilles Vonn D. Rabina<a class="about-arrow"> &rarr;</a></h5>
                   <p class="card-text">Software Engineer and Full-Stack Mobile and Web Developer</p>
                 </div>
             </div>
@@ -241,7 +247,7 @@
 
                 </div>
 
-                <button type="button" class="btn btn-primary btn-sm">GitHub</button>
+                <button type="button" class="btn btn-outline-primary">GitHub</button>
 
             </div>
 
@@ -257,7 +263,7 @@
                         <path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path>
                     </svg>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm">GitHub</button>
+                <button type="button" class="btn btn-outline-primary">GitHub</button>
             </div>
             
             <!-- Project Card -->
@@ -272,7 +278,7 @@
                         <path fill="#00796b" d="M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755,0.779,1.022,1.662,1.022 s1.315-0.267,1.644-1.022l2.667-5.902v6.93h1.92v-7.258c0-0.697-0.277-1.035-0.849-1.209c-1.367-0.43-2.285-0.059-2.7,0.872 l-2.735,6.16l-2.649-6.16c-0.398-0.93-1.332-1.302-2.7-0.872C0.277,26.748,0,27.085,0,27.782v7.258H0.002z"></path>
                     </svg>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm">GitHub</button>
+                <button type="button" class="btn btn-outline-primary">GitHub</button>
             </div>
             
             <!-- Project Card -->
@@ -287,7 +293,7 @@
                         <path fill="#4CAF50" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
                     </svg>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm">GitHub</button>
+                <button type="button" class="btn btn-outline-primary">GitHub</button>
             </div>
             
             <!-- Project Card -->
@@ -302,7 +308,7 @@
                         <path fill="#2196F3" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
                     </svg>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm">GitHub</button>
+                <button type="button" class="btn btn-outline-primary">GitHub</button>
             </div>
 
         </div>
