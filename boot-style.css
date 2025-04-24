@@ -95,6 +95,25 @@
 
 }
 
+.about-arrow{
+    text-decoration: none;
+    animation: about-arrow 2s ease-in-out 0s 1 normal forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes about-arrow {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
 .about-icons{
     width: 2rem;
     height: auto;
@@ -132,26 +151,6 @@
     z-index: 2;
 }
 
-#about-me:not(:hover) #about-me-card{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
-#about-me:not(:hover) #click-text{
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-#about-me:hover #about-me-card{
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-#about-me:hover #click-text{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
 .about-icons{
     width: 60px;
     height: auto;
@@ -185,6 +184,27 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.about-data{
+    box-shadow: 0 0 10px rgba(0, 115, 255, 0);
+    border: 2px solid rgba(0, 115, 255, 0);
+    transition: border 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+}
+
+.about-data:hover{
+    box-shadow: 0 0 10px rgba(0, 115, 255, 0);
+    border: 2px solid rgba(0, 115, 255, 0.497);
+    transition: border 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+}
+
+.data{
+    border: 2px solid rgba(0, 115, 255, 0);
+    transition: transform 0.6s ease-in-out,
+                border 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+}
+
 .data:hover{
     transform: scale(1.01);
     box-shadow: 0 0 10px rgba(0, 115, 255, 0);
@@ -192,5 +212,4 @@
     transition: transform 0.6s ease-in-out,
                 border 0.2s ease-in-out,
                 box-shadow 0.2s ease-in-out;
-
 }
