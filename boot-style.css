@@ -40,6 +40,10 @@
         margin-top: 1rem;
     }
 
+    .top-container::before {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -63,6 +67,7 @@
         overflow: scroll;
         scrollbar-width: none;
         padding: 2rem;
+        padding-bottom: 20rem;
     }
 
     #about-image{
@@ -76,6 +81,19 @@
         height: 15%;
         z-index: 2;
     }
+
+    .top-container::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 85%);
+        pointer-events: none;
+    }
+
 }
 
 .about-icons{
@@ -92,7 +110,6 @@
     justify-content: start;
     align-items: center;
     text-align: center;
-
 }
 
     .contact-container svg{
@@ -134,18 +151,6 @@
 #about-me:hover #click-text{
     opacity: 1;
     transition: all 0.5s ease-in-out;
-}
-
-.top-container::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 85%);
-    pointer-events: none;
 }
 
 .about-icons{
